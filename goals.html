@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDGpedia - All Goals</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00a65a',
+                        secondary: '#2980b9',
+                        accent: '#f39c12'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 w-full h-screen overflow-hidden">
+<custom-navbar></custom-navbar>
+
+    <main class="container mx-auto px-4 py-12 h-screen snap-start">
+        <section class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-primary mb-6">The 17 Sustainable Development Goals</h1>
+            <p class="text-xl text-gray-700 max-w-3xl mx-auto mb-6">Click on any goal to learn more about its targets and indicators</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="chatbot.html" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary to-secondary text-white rounded-lg font-medium hover:opacity-90 transition shadow-md">
+                    <i data-feather="message-square" class="mr-2"></i>
+                    Chat with AI Assistant
+                </a>
+            </div>
+</section>
+        <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Goal 1 -->
+            <sdg-card 
+                goal-number="1" 
+                title="No Poverty" 
+                description="End poverty in all its forms everywhere"
+                color="red">
+            </sdg-card>
+
+            <!-- Goal 2 -->
+            <sdg-card 
+                goal-number="2" 
+                title="Zero Hunger" 
+                description="End hunger, achieve food security and improved nutrition"
+                color="orange">
+            </sdg-card>
+            <!-- Goal 3 -->
+            <sdg-card 
+                goal-number="3" 
+                title="Good Health" 
+                description="Ensure healthy lives and promote well-being for all"
+                color="yellow">
+            </sdg-card>
+<!-- Goal 4 -->
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-6 text-center cursor-pointer">
+                <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-green-100 flex items-center justify-center">
+                    <span class="text-2xl font-bold text-green-600">4</span>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Quality Education</h3>
+                <p class="text-gray-600 text-sm">Ensure inclusive and equitable quality education</p>
+            </div>
+
+            <!-- Goal 5 -->
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-6 text-center cursor-pointer">
+                <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-purple-100 flex items-center justify-center">
+                    <span class="text-2xl font-bold text-purple-600">5</span>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Gender Equality</h3>
+                <p class="text-gray-600 text-sm">Achieve gender equality and empower all women and girls</p>
+            </div>
+
+            <!-- Goal 6 -->
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-6 text-center cursor-pointer">
+                <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-blue-100 flex items-center justify-center">
+                    <span class="text-2xl font-bold text-blue-600">6</span>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Clean Water</h3>
+                <p class="text-gray-600 text-sm">Ensure availability of water and sanitation for all</p>
+            </div>
+
+            <!-- Goal 7 -->
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-6 text-center cursor-pointer">
+                <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-indigo-100 flex items-center justify-center">
+                    <span class="text-2xl font-bold text-indigo-600">7</span>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Affordable Energy</h3>
+                <p class="text-gray-600 text-sm">Ensure access to affordable, reliable energy</p>
+            </div>
+
+            <!-- Goal 8 -->
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-6 text-center cursor-pointer">
+                <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-red-100 flex items-center justify-center">
+                    <span class="text-2xl font-bold text-red-600">8</span>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Decent Work</h3>
+                <p class="text-gray-600 text-sm">Promote sustained, inclusive economic growth</p>
+            </div>
+
+            <!-- Goal 9 -->
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-6 text-center cursor-pointer">
+                <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-orange-100 flex items-center justify-center">
+                    <span class="text-2xl font-bold text-orange-600">9</span>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Innovation</h3>
+                <p class="text-gray-600 text-sm">Build resilient infrastructure, promote industrialization</p>
+            </div>
+
+            <!-- Goal 10 -->
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-6 text-center cursor-pointer">
+                <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-yellow-100 flex items-center justify-center">
+                    <span class="text-2xl font-bold text-yellow-600">10</span>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Reduced Inequality</h3>
+                <p class="text-gray-600 text-sm">Reduce inequality within and among countries</p>
+            </div>
+
+            <!-- Goal 11 -->
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-6 text-center cursor-pointer">
+                <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-green-100 flex items-center justify-center">
+                    <span class="text-2xl font-bold text-green-600">11</span>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Sustainable Cities</h3>
+                <p class="text-gray-600 text-sm">Make cities inclusive, safe, resilient and sustainable</p>
+            </div>
+
+            <!-- Goal 12 -->
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-6 text-center cursor-pointer">
+                <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-purple-100 flex items-center justify-center">
+                    <span class="text-2xl font-bold text-purple-600">12</span>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Responsible Consumption</h3>
+                <p class="text-gray-600 text-sm">Ensure sustainable consumption and production patterns</p>
+            </div>
+
+            <!-- Goal 13 -->
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-6 text-center cursor-pointer">
+                <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-blue-100 flex items-center justify-center">
+                    <span class="text-2xl font-bold text-blue-600">13</span>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Climate Action</h3>
+                <p class="text-gray-600 text-sm">Take urgent action to combat climate change</p>
+            </div>
+
+            <!-- Goal 14 -->
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-6 text-center cursor-pointer">
+                <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-indigo-100 flex items-center justify-center">
+                    <span class="text-2xl font-bold text-indigo-600">14</span>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Life Below Water</h3>
+                <p class="text-gray-600 text-sm">Conserve and sustainably use the oceans and marine resources</p>
+            </div>
+
+            <!-- Goal 15 -->
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-6 text-center cursor-pointer">
+                <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-red-100 flex items-center justify-center">
+                    <span class="text-2xl font-bold text-red-600">15</span>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Life on Land</h3>
+                <p class="text-gray-600 text-sm">Protect, restore and promote sustainable use of ecosystems</p>
+            </div>
+
+            <!-- Goal 16 -->
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-6 text-center cursor-pointer">
+                <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-orange-100 flex items-center justify-center">
+                    <span class="text-2xl font-bold text-orange-600">16</span>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Peace and Justice</h3>
+                <p class="text-gray-600 text-sm">Promote peaceful and inclusive societies</p>
+            </div>
+
+            <!-- Goal 17 -->
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-6 text-center cursor-pointer">
+                <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-yellow-100 flex items-center justify-center">
+                    <span class="text-2xl font-bold text-yellow-600">17</span>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Partnerships</h3>
+                <p class="text-gray-600 text-sm">Strengthen the means of implementation</p>
+            </div>
+        </section>
+    </main>
+    <custom-footer></custom-footer>
+    <script>feather.replace();</script>
+    <script src="components/sdg-card.js"></script>
+    <script src="scroll-script.js"></script>
+</body>
+</html>
